@@ -1,0 +1,28 @@
+{
+  "name": "moa-square",
+  "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "pnpm --recursive lint",
+    "test": "pnpm --recursive test",
+    "typecheck": "pnpm --recursive typecheck"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.42.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@react-native/jest-preset": "0.86.2"
+    }
+  }
+}
