@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "모아스퀘어",
+    "slug": "moa-square",
+    "version": "0.0.0",
+    "orientation": "portrait",
+    "scheme": "moasquare",
+    "userInterfaceStyle": "automatic",
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
