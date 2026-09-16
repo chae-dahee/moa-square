@@ -49,7 +49,8 @@ MCP Adapter는 실제 필요가 확인될 때 같은 Core에 연결하며 이 �
 - 패키지 매니저는 pnpm, 런타임은 Node.js LTS를 사용합니다.
 - 서버는 Fastify와 TypeScript, 모바일은 Expo와 TypeScript로 초기화합니다.
 - 공통 린트(ESLint)·포매터(Prettier)·타입 검사(tsc) 설정을 둡니다.
-- 테스트 러너는 Vitest(서버)와 React Native Testing Library(모바일)를 설정합니다.
+- 테스트 러너는 서버 Vitest, 모바일 Jest(jest-expo 프리셋)로 지정합니다.
+- React Native Testing Library는 모바일 테스트 유틸리티로 사용하며 테스트 러너로 두지 않습니다.
 
 ### 완료 기준
 
@@ -326,7 +327,7 @@ CalDAV 호환을 전제로 한 데이터 모델과 인증·권한·버전 규칙
 
 ### 선행 조건
 
-단계 7 완료.
+단계 4와 단계 7 완료. 단계 7은 단계 4 완료를 보장하지 않으므로 예약 갱신 경로를 연결하려면 단계 4가 함께 완료되어야 합니다.
 
 ### 구현 대상
 

@@ -23,7 +23,7 @@ iPhone과 Android/Galaxy를 지원해야 합니다. 특정 제조사의 생태�
 
 ### 기본 캘린더 연동
 
-Apple Calendar, Google Calendar, Samsung Calendar와의 연동을 요구합니다. 가능하면 일정 읽기·쓰기 또는 양방향 동기화를 지원합니다.
+Apple Calendar, Google Calendar, Samsung Calendar를 쓰는 사람이 moa-square와 함께 일정을 볼 수 있어야 합니다. 이 요구는 공급자 계정 서버와의 직접 동기화가 아니라 기기 캘린더 읽기와 자체 캘린더의 CalDAV 제공으로 충족합니다. 초기 출시에서는 두 경로 모두 읽기 전용이며, 자체 공유 일정의 등록·수정·삭제는 앱의 REST 경로로 제공합니다.
 
 연동은 아래 두 경로로 구분합니다. 자체 공유 일정은 단일 서버의 Calendar Core에서 관리하고, 앱은 REST Adapter를 통해 접근합니다.
 
